@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712844957192",
+    "project_id": "tabuleiro-31f76",
+    "storage_bucket": "tabuleiro-31f76.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712844957192:android:ef752a774cd3bd9d2323bd",
+        "android_client_info": {
+          "package_name": "com.aidre.tabuleiro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_MFulNNu6ZIoPt0RHV-MkEZY6_sFDN5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
