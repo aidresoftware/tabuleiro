@@ -22,25 +22,23 @@ const LoginScreen = ({ navigation }) => {
         // navigation.navigate('Home'); 
         
     } catch (error) {
-        let errorMessage = 'Falha na autenticação.';
-        
-        // >>>>> MODIFICAÇÃO INCLUÍDA AQUI <<<<<
-        if (error.code) {
-            // Se houver um código de erro do Firebase, exibe ele diretamente
-            errorMessage = `Erro de Conexão Firebase: ${error.code}`;
-        } else if (error.code === 'auth/invalid-email') {
-            errorMessage = 'O formato do e-mail é inválido.';
-        } else if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
-            errorMessage = 'E-mail ou senha incorretos. Verifique suas credenciais.';
-        }
-        // >>>>> FIM DA MODIFICAÇÃO <<<<<
+        // >>>>>> MUDANÇA CRÍTICA AQUI <<<<<<
+        let errorMessage = 'Erro desconhecido. Não foi possível conectar ao Firebase.';
+        
+        // Força a exibição de todo o objeto de erro, mesmo que esteja malformado
+        try {
+            errorMessage = JSON.stringify(error, null, 2);
+        } catch (e) {
+            errorMessage = error.toString();
+        }
 
-        Alert.alert('Erro de Login', errorMessage);
+        Alert.alert('ERRO BRUTO DO SISTEMA', errorMessage);
     } finally {
         setLoading(false);
     }
   };
 
+  // ... (O restante do código de renderização do componente é o mesmo)
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Acarajé da Neuza - Acesso</Text>
