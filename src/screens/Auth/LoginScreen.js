@@ -18,9 +18,8 @@ const LoginScreen = ({ navigation }) => {
         try {
             await auth().signInWithEmailAndPassword(email, password);
 
-            // ✅ A SOLUÇÃO: Navega diretamente para a Home.
-            // O sucesso do login é a própria navegação, sem Alert intermediário.
-            navigation.navigate('Home'); 
+            // ✅ CORREÇÃO: Navega para a rota principal 'App', que contém as abas (Vendas/Estoque/Relatórios)
+            navigation.navigate('App'); 
 
         } catch (error) {
             // Configuração de erro amigável
