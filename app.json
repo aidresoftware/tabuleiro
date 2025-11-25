@@ -2,7 +2,7 @@
   "expo": {
     "name": "tabuleiro",
     "slug": "tabuleiro",
-    "version": "1.0.1", <--- Versão Visual Aumentada
+    "version": "1.0.1", 
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,7 +23,7 @@
       "edgeToEdgeEnabled": true,
       "package": "com.aidre.tabuleiro",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 2 <--- Campo 'versionCode' adicionado e iniciado em 2
+      "versionCode": 2 
     },
     "web": {
       "favicon": "./assets/favicon.png"
