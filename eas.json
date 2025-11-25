@@ -9,7 +9,10 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {               // <--- ADICIONADO: Especifica a plataforma
+        "buildType": "apk"       // <--- ADICIONADO: Especifica o tipo de build (APK)
+      }
     },
     "production": {
       "autoIncrement": true
