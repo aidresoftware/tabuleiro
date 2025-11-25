@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,
-  },
+  }, 
   subtitle: {
     marginTop: 10,
     fontSize: 14,
@@ -31,5 +31,4 @@ const styles = StyleSheet.create({
   }
 });
 
-// >>> A LINHA QUE FALTAVA E CAUSAVA O ERRO CRÍTICO:
 export default VendasScreen;
